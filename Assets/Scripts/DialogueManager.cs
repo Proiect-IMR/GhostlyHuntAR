@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI ghostNameText;
     public TMP_InputField inputField;
 
+    public Button nextButton;
+    public Button interactButton;
 
 
     public GameObject dialoguePanel;
@@ -91,6 +94,8 @@ public class DialogueManager : MonoBehaviour
         ghostName.SetActive(true);
         ghostNameText.text = npc.ghostName;
         inputFieldObject.SetActive(false);
+        nextButton.gameObject.SetActive(false);
+        interactButton.gameObject.SetActive(true);
     }
     private void HandleInputVisibility()
     {

@@ -18,6 +18,7 @@ public class GhostManager : MonoBehaviour
     public DialogueManager dialogueManager;
     public NPC[] npcs;
     public Button interactButton;
+    public Button nextButton;
     public GameObject[] ghosts;
     public TextMeshProUGUI textMeshPro;
     private GameObject currentActiveGhost;
@@ -104,7 +105,6 @@ public class GhostManager : MonoBehaviour
 
                 dialogueManager.npc = npcs[nearestGhostIndex];
                 dialogueManager.InitializeNpc(npcs[nearestGhostIndex]);
-                dialogueManager.AdvanceDialogue();
             }
         }
         else
@@ -113,6 +113,7 @@ public class GhostManager : MonoBehaviour
             {
                 currentActiveGhost.SetActive(false);
                 currentActiveGhost = null; // Clear the current active ghost
+                interactButton.gameObject.SetActive(false);
             }
 
             DeactivateAllGhostsAndShowMessage();
@@ -156,6 +157,12 @@ public class GhostManager : MonoBehaviour
         {
             textMeshPro.text = "No active ghost.";
         }
+    }
+    public void InteractWithGhost()
+    {
+        interactButton.gameObject.SetActive(false);
+        dialogueManager.AdvanceDialogue();
+        nextButton.gameObject.SetActive(true);
     }
 
     public static double ToRadians(double degrees)
