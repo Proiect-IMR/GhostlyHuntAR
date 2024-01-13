@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa8699b0f6b1c0843b3340794f9d6541, type: 3}
+  m_Name: IonCreanga
+  m_EditorClassIdentifier: 
+  ghostName: Ion Creanga
+  dialogue:
+  - "<space=50>Am adunat r\xE2sete \u0219i amintiri din copil\u0103ria petrecut\u0103
+    \xEEn humule\u0219ti, transform\xE2ndu-le \xEEn pove\u0219ti care s\u0103 \xEEnc\xE2nte
+    inimi de orice v\xE2rst\u0103."
+  - "<space=50>\xCEn satul meu natal, am cules firimituri de \xEEn\u021Belepciune
+    popular\u0103, \u021Bes\xE2ndu-le \xEEntr-un tapiserie de proz\u0103 care \xEEmi
+    poart\u0103 amprenta."
+  - "<space=50>Domnul profesor a fost prietenul meu cel mai bun \u0219i \xEEmpreun\u0103
+    am scris pagini de istorie literar\u0103, eu cu povestirile mele pline de umor
+    \u0219i haz."
+  - "<space=50>Po\u021Bi s\u0103 ghice\u0219ti fantoma c\u0103rei personalit\u0103\u021Bi
+    istorice sunt?"

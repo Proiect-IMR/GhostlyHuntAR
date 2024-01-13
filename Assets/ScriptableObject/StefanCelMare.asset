@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa8699b0f6b1c0843b3340794f9d6541, type: 3}
+  m_Name: StefanCelMare
+  m_EditorClassIdentifier: 
+  ghostName: Stefan cel Mare
+  dialogue:
+  - "<space=50>Pe c\xE2mpul de lupt\u0103, am condus o\u0219tile mele la victorie,
+    \u0219i am l\u0103sat \xEEn urma mea m\u0103n\u0103stiri ca semn al credin\u021Bei
+    mele."
+  - "<space=50>Am domnit cu dreptate peste aceste \u021Binuturi, l\u0103s\xE2nd \xEEn
+    spate ziduri care s\u0103 m\u0103rturiseasc\u0103 vremurile de glorie."
+  - "<space=50>Chiar \u0219i \xEEn moarte, spiritul meu p\u0103ze\u0219te hotarele,
+    a\u0219a cum am f\u0103cut c\xE2nd eram viu \u0219i p\u0103m\xE2nturile-mi erau
+    sfinte."
+  - "<space=50>Po\u021Bi s\u0103 ghice\u0219ti fantoma c\u0103rei personalit\u0103\u021Bi
+    istorice sunt?"
