@@ -22,6 +22,18 @@
 - Started working on Geolocation API.
 - [Demo video for current state](https://drive.google.com/file/d/1nokihEIQxLApQcL5rq93Z3ml_dbC3tx_/view?usp=sharing)
 
+### Laborator 11
+- We started adding audio lines to the ghosts when a player clicks on them (the current voices are only a test, they will be modified)
+- Demo video for audio lines
+- Geospatial first tests with Cesium
+- Demo video for geospatial api
+
+### Laborator 12
+- Placed all 5 ghosts in Geospatial as Anchors
+- Implemented system to get the current position of user in the real world and only spawn the nearest ghost to him
+- Dialogue for ghosts in Geospatial
+- [Demo video for current state](https://drive.google.com/file/d/11vnv-hFOF1eqB1Y6tsPgoQCq40hqWDWi/view?usp=sharing)
+
 ## Screenshots
 ![WireFrames](https://github.com/Proiect-IMR/Proiect-IMR/assets/36382081/0e48121d-1824-42eb-904b-abd63a957324)
 ![Unity1](https://github.com/Proiect-IMR/Proiect-IMR/assets/36382081/8ea0aca9-1f0b-4425-878f-fb2081d88458)
