@@ -1,6 +1,8 @@
 using UnityEngine;
 using System.Collections;
 using System;
+using UnityEngine.UI;
+using TMPro;
 
 [Serializable]
 public struct GhostLocation
@@ -13,9 +15,16 @@ public struct GhostLocation
 public class GhostManager : MonoBehaviour
 {
     public GhostLocation[] ghostLocations;
+    public DialogueManager dialogueManager;
+    public NPC[] npcs;
+    public Button interactButton;
     public GameObject[] ghosts;
+    public TextMeshProUGUI textMeshPro;
+    private GameObject currentActiveGhost;
+    private GameObject nearestGhost = null;
     private IEnumerator Start()
     {
+
         if (!Input.location.isEnabledByUser)
             yield break;
 
@@ -57,15 +66,13 @@ public class GhostManager : MonoBehaviour
             Debug.Log("Update");
         }
     }
-    public float minimumDistanceToActivate = 5.0f;
+    public float maximumDistanceToActivate;
 
     void UpdateNearestGhost(LocationInfo playerLocation)
     {
         double nearestDistance = double.MaxValue;
-        GameObject nearestGhost = null;
         int nearestGhostIndex = -1;
 
-        // Iterate through all ghosts to find the closest one that is also outside the minimum distance.
         for (int i = 0; i < ghostLocations.Length; i++)
         {
             double distance = HaversineDistance(
@@ -73,7 +80,7 @@ public class GhostManager : MonoBehaviour
                 ghostLocations[i].latitude, ghostLocations[i].longitude
             );
 
-            if (distance < nearestDistance && distance > minimumDistanceToActivate)
+            if (distance < nearestDistance)
             {
                 nearestDistance = distance;
                 nearestGhost = ghosts[i];
@@ -81,23 +88,50 @@ public class GhostManager : MonoBehaviour
             }
         }
 
-        // If no ghost is within the minimum distance, we don't activate any ghosts.
-        if (nearestGhostIndex == -1)
+        if (nearestGhostIndex != -1 && nearestDistance <= maximumDistanceToActivate)
         {
-            foreach (GameObject ghost in ghosts)
+            if (currentActiveGhost != nearestGhost)
             {
-                ghost.SetActive(false);
+                if (currentActiveGhost != null)
+                {
+                    currentActiveGhost.SetActive(false);
+                }
+
+                nearestGhost.SetActive(true);
+                currentActiveGhost = nearestGhost;
+                textMeshPro.text = ghostLocations[nearestGhostIndex].name;
+                interactButton.gameObject.SetActive(true);
+
+                dialogueManager.npc = npcs[nearestGhostIndex];
+                dialogueManager.InitializeNpc(npcs[nearestGhostIndex]);
+                dialogueManager.AdvanceDialogue();
             }
         }
         else
         {
-            // Update visibility
-            for (int i = 0; i < ghosts.Length; i++)
+            if (currentActiveGhost != null)
             {
-                ghosts[i].SetActive(i == nearestGhostIndex);
+                currentActiveGhost.SetActive(false);
+                currentActiveGhost = null; // Clear the current active ghost
             }
+
+            DeactivateAllGhostsAndShowMessage();
         }
     }
+
+
+
+    void DeactivateAllGhostsAndShowMessage()
+    {
+        foreach (GameObject ghost in ghosts)
+        {
+            ghost.SetActive(false);
+        }
+        interactButton.gameObject.SetActive(false);
+        textMeshPro.text = "No ghosts within range.";
+        currentActiveGhost = null;
+    }
+
 
     public static double HaversineDistance(double lat1, double lon1, double lat2, double lon2)
     {
@@ -111,6 +145,17 @@ public class GhostManager : MonoBehaviour
                    Math.Sin(dLon / 2) * Math.Sin(dLon / 2) * Math.Cos(lat1) * Math.Cos(lat2);
         double c = 2 * Math.Atan2(Math.Sqrt(a), Math.Sqrt(1 - a));
         return earthRadiusKm * c;
+    }
+    public void SetCurrentGhost()
+    {
+        if (currentActiveGhost != null)
+        {
+            textMeshPro.text = currentActiveGhost.name;
+        }
+        else
+        {
+            textMeshPro.text = "No active ghost.";
+        }
     }
 
     public static double ToRadians(double degrees)

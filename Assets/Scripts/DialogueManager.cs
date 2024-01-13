@@ -61,6 +61,11 @@ public class DialogueManager : MonoBehaviour
             currentDialogueIndex++;
         }
     }
+    public void InitializeNpc(NPC npc)
+    {
+        this.npc = npc;
+        currentDialogueIndex = 0;
+    }
 
     public void CheckAnswer()
     {
