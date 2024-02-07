@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: MihaiEminescu
   m_EditorClassIdentifier: 
   ghostName: Mihai Eminescu
+  guessedName: 
   dialogue:
   - "<space=50>C\xE2nd versurile mele prind via\u021B\u0103 \xEEn susurul frunzelor
     \u0219i str\u0103lucesc precum steaua serii, simt c\u0103 \xEEmi \xEEmplinesc
@@ -25,3 +26,8 @@ MonoBehaviour:
     timp, esen\u021Ba g\xE2ndurilor mele."
   - "<space=50>Po\u021Bi s\u0103 ghice\u0219ti fantoma c\u0103rei personalit\u0103\u021Bi
     istorice sunt?"
+  audioClips:
+  - {fileID: 8300000, guid: 26c9ea55e3ae9204d99c742509381d8e, type: 3}
+  - {fileID: 8300000, guid: a1197ad801ee2be4386479c4eab889e1, type: 3}
+  - {fileID: 8300000, guid: 8a60d9bcf5bfdd049b557fd11c95d658, type: 3}
+  - {fileID: 8300000, guid: a5e2c0d181ab5c844bd9436ebc7ab858, type: 3}

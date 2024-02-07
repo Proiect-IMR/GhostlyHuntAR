@@ -20,7 +20,12 @@ public class GhostManager : MonoBehaviour
     public Button interactButton;
     public Button nextButton;
     public GameObject[] ghosts;
+
     public TextMeshProUGUI textMeshPro;
+    public TextMeshProUGUI debugText;
+    public TextMeshProUGUI distanceText;
+    public TextMeshProUGUI activeGhost;
+
     private GameObject currentActiveGhost;
     private GameObject nearestGhost = null;
     private IEnumerator Start()
@@ -53,7 +58,9 @@ public class GhostManager : MonoBehaviour
         }
         else
         {
+            debugText.text = "Working";
             Debug.Log("Working");
+
         }
     }
     void Update()
@@ -62,15 +69,18 @@ public class GhostManager : MonoBehaviour
         {
             // Get the player's current location
             LocationInfo playerLocation = Input.location.lastData;
+            debugText.text = "Latitude: " + playerLocation.latitude + " Longitude: " + playerLocation.longitude;
             UpdateNearestGhost(playerLocation);
 
             Debug.Log("Update");
         }
     }
-    public float maximumDistanceToActivate;
+    private float maximumDistanceToActivateInMeters = 20f;
 
     void UpdateNearestGhost(LocationInfo playerLocation)
     {
+        double maximumDistanceToActivateInKilometers = maximumDistanceToActivateInMeters / 1000.0; 
+        distanceText.text = "Distance to activate: " + maximumDistanceToActivateInKilometers;
         double nearestDistance = double.MaxValue;
         int nearestGhostIndex = -1;
 
@@ -87,16 +97,20 @@ public class GhostManager : MonoBehaviour
                 nearestGhost = ghosts[i];
                 nearestGhostIndex = i;
             }
+            activeGhost.text = "Active Ghost: " + nearestGhost.name + " " + nearestGhostIndex + " " + nearestDistance;
         }
 
-        if (nearestGhostIndex != -1 && nearestDistance <= maximumDistanceToActivate)
+        if (nearestGhostIndex != -1 && nearestDistance <= maximumDistanceToActivateInKilometers)
         {
+            distanceText.text = "Distance to ghost : " + nearestDistance;
+
             if (currentActiveGhost != nearestGhost)
             {
                 if (currentActiveGhost != null)
                 {
                     currentActiveGhost.SetActive(false);
                 }
+                activeGhost.text = "Active Ghost: " + nearestGhost.name;
 
                 nearestGhost.SetActive(true);
                 currentActiveGhost = nearestGhost;
@@ -136,7 +150,7 @@ public class GhostManager : MonoBehaviour
 
     public static double HaversineDistance(double lat1, double lon1, double lat2, double lon2)
     {
-        const double earthRadiusKm = 6371.0;
+        const double earthRadiusKm = 6378.0;
         double dLat = ToRadians(lat2 - lat1);
         double dLon = ToRadians(lon2 - lon1);
         lat1 = ToRadians(lat1);

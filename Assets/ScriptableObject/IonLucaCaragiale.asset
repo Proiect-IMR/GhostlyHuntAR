@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: IonLucaCaragiale
   m_EditorClassIdentifier: 
   ghostName: Ion Luca Caragiale
+  guessedName: 
   dialogue:
   - "<space=50>Scena teatrului rom\xE2nesc \xEEmi datoreaz\u0103 multe din perlele
     sale, unde am criticat moravurile societ\u0103\u021Bii cu o peni\u021B\u0103
@@ -24,3 +25,8 @@ MonoBehaviour:
     cea de toate zilele."
   - "<space=50>Po\u021Bi s\u0103 ghice\u0219ti fantoma c\u0103rei personalit\u0103\u021Bi
     istorice sunt?"
+  audioClips:
+  - {fileID: 8300000, guid: 9b9880ad9ca418843b9e794d9f2dab82, type: 3}
+  - {fileID: 8300000, guid: d2771715d4d8a004ea4c0bead931c34f, type: 3}
+  - {fileID: 8300000, guid: 782e7f51f2432f64395a0f4c4e6ed458, type: 3}
+  - {fileID: 8300000, guid: ad5edba1bc7b0494d9f24b9a9f925986, type: 3}

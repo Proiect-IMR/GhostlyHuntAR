@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: VeronicaMicle
   m_EditorClassIdentifier: 
   ghostName: Veronica Micle
+  guessedName: 
   dialogue:
   - "<space=50>Inima mea a b\u0103tut \xEEn unison cu poezia, \xEEmpletind versuri
     de dragoste care s-au \xEEnc\u0103lzit la flac\u0103ra unui geniu literar."
@@ -23,3 +24,8 @@ MonoBehaviour:
     imortalizat \xEEn r\xE2ndurile poeziei sale."
   - "<space=50>Po\u021Bi s\u0103 ghice\u0219ti fantoma c\u0103rei personalit\u0103\u021Bi
     istorice sunt?"
+  audioClips:
+  - {fileID: 8300000, guid: d2ac3d2e35fc32640bb11d86b74907ba, type: 3}
+  - {fileID: 8300000, guid: 6e5a384f4d4373f4a9629f683f825056, type: 3}
+  - {fileID: 8300000, guid: 8ee9a99f8c99a90448f3226478f6c637, type: 3}
+  - {fileID: 8300000, guid: 8bada4e3c971451429c04ae31929f2d6, type: 3}

@@ -6,6 +6,8 @@ using UnityEngine;
 public class NPC : ScriptableObject
 {
     public string ghostName;
+    public bool guessed = false;
     [TextArea(3, 15)]
     public string[] dialogue;
+    public AudioClip[] audioClips;
 }
