@@ -10,4 +10,5 @@ public class NPC : ScriptableObject
     [TextArea(3, 15)]
     public string[] dialogue;
     public AudioClip[] audioClips;
+    public bool activeBadge = false;
 }

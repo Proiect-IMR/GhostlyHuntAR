@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa8699b0f6b1c0843b3340794f9d6541, type: 3}
   m_Name: MihaiEminescu
   m_EditorClassIdentifier: 
-  ghostName: Mihai Eminescu
-  guessedName: 
+  ghostName: MihaiEminescu
+  guessed: 0
   dialogue:
   - "<space=50>C\xE2nd versurile mele prind via\u021B\u0103 \xEEn susurul frunzelor
     \u0219i str\u0103lucesc precum steaua serii, simt c\u0103 \xEEmi \xEEmplinesc
@@ -31,3 +31,4 @@ MonoBehaviour:
   - {fileID: 8300000, guid: a1197ad801ee2be4386479c4eab889e1, type: 3}
   - {fileID: 8300000, guid: 8a60d9bcf5bfdd049b557fd11c95d658, type: 3}
   - {fileID: 8300000, guid: a5e2c0d181ab5c844bd9436ebc7ab858, type: 3}
+  activeBadge: 0

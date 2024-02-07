@@ -22,7 +22,6 @@ public class GhostManager : MonoBehaviour
     public GameObject[] ghosts;
 
     public TextMeshProUGUI textMeshPro;
-    public TextMeshProUGUI debugText;
     public TextMeshProUGUI distanceText;
     public TextMeshProUGUI activeGhost;
 
@@ -58,7 +57,6 @@ public class GhostManager : MonoBehaviour
         }
         else
         {
-            debugText.text = "Working";
             Debug.Log("Working");
 
         }
@@ -69,7 +67,6 @@ public class GhostManager : MonoBehaviour
         {
             // Get the player's current location
             LocationInfo playerLocation = Input.location.lastData;
-            debugText.text = "Latitude: " + playerLocation.latitude + " Longitude: " + playerLocation.longitude;
             UpdateNearestGhost(playerLocation);
 
             Debug.Log("Update");
@@ -102,8 +99,8 @@ public class GhostManager : MonoBehaviour
 
         if (nearestGhostIndex != -1 && nearestDistance <= maximumDistanceToActivateInKilometers)
         {
-            distanceText.text = "Distance to ghost : " + nearestDistance;
-
+            //distanceText.text = "Distance to ghost : " + nearestDistance;
+            distanceText.text = "Active badge" + npcs[nearestGhostIndex].activeBadge;
             if (currentActiveGhost != nearestGhost)
             {
                 if (currentActiveGhost != null)

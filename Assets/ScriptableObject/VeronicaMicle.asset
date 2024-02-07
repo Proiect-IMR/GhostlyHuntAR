@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa8699b0f6b1c0843b3340794f9d6541, type: 3}
   m_Name: VeronicaMicle
   m_EditorClassIdentifier: 
-  ghostName: Veronica Micle
-  guessedName: 
+  ghostName: VeronicaMicle
+  guessed: 0
   dialogue:
   - "<space=50>Inima mea a b\u0103tut \xEEn unison cu poezia, \xEEmpletind versuri
     de dragoste care s-au \xEEnc\u0103lzit la flac\u0103ra unui geniu literar."
@@ -29,3 +29,4 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 6e5a384f4d4373f4a9629f683f825056, type: 3}
   - {fileID: 8300000, guid: 8ee9a99f8c99a90448f3226478f6c637, type: 3}
   - {fileID: 8300000, guid: 8bada4e3c971451429c04ae31929f2d6, type: 3}
+  activeBadge: 0

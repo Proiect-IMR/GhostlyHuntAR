@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa8699b0f6b1c0843b3340794f9d6541, type: 3}
   m_Name: IonCreanga
   m_EditorClassIdentifier: 
-  ghostName: Ion Creanga
-  guessedName: 
+  ghostName: IonCreanga
+  guessed: 0
   dialogue:
   - "<space=50>Am adunat r\xE2sete \u0219i amintiri din copil\u0103ria petrecut\u0103
     \xEEn humule\u0219ti, transform\xE2ndu-le \xEEn pove\u0219ti care s\u0103 \xEEnc\xE2nte
@@ -31,3 +31,4 @@ MonoBehaviour:
   - {fileID: 8300000, guid: e4174cf5f0a0c7d429da6985d0bbceba, type: 3}
   - {fileID: 8300000, guid: c6ae921abc624c54cb55a9a010470225, type: 3}
   - {fileID: 8300000, guid: efee8c6937a3f6e4a8312d4b0b6342d4, type: 3}
+  activeBadge: 0

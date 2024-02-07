@@ -7343,6 +7343,7 @@ MonoBehaviour:
   ghostName: {fileID: 956256244}
   guessButton: {fileID: 950706697}
   inputFieldObject: {fileID: 1005351113}
+  activeGhost: {fileID: 1148580395}
   dialogueAudioClips: []
   audioSource: {fileID: 1456446298}
   wrong_answer: {fileID: 8300000, guid: 6b99a9b0551a5a6469e7e6e697a5a14c, type: 3}
@@ -7933,7 +7934,6 @@ MonoBehaviour:
   - {fileID: 1154270188}
   - {fileID: 2106482958}
   textMeshPro: {fileID: 1696769764}
-  debugText: {fileID: 1148580395}
   distanceText: {fileID: 1228150076}
   activeGhost: {fileID: 794287168}
 --- !u!4 &2029410594

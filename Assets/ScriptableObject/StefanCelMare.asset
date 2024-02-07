@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa8699b0f6b1c0843b3340794f9d6541, type: 3}
   m_Name: StefanCelMare
   m_EditorClassIdentifier: 
-  ghostName: Stefan cel Mare
-  guessedName: 
+  ghostName: StefanCelMare
+  guessed: 0
   dialogue:
   - "<space=50>Pe c\xE2mpul de lupt\u0103, am condus o\u0219tile mele la victorie,
     \u0219i am l\u0103sat \xEEn urma mea m\u0103n\u0103stiri ca semn al credin\u021Bei
@@ -30,3 +30,4 @@ MonoBehaviour:
   - {fileID: 8300000, guid: b2786c6eee5b15843918fb33d349493b, type: 3}
   - {fileID: 8300000, guid: c91595441059f1142b82dcf934d2fc93, type: 3}
   - {fileID: 8300000, guid: 712a0bb8a927c704abe15eb1c050a21d, type: 3}
+  activeBadge: 1

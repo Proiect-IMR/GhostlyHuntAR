@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa8699b0f6b1c0843b3340794f9d6541, type: 3}
   m_Name: IonLucaCaragiale
   m_EditorClassIdentifier: 
-  ghostName: Ion Luca Caragiale
-  guessedName: 
+  ghostName: IonLucaCaragiale
+  guessed: 0
   dialogue:
   - "<space=50>Scena teatrului rom\xE2nesc \xEEmi datoreaz\u0103 multe din perlele
     sale, unde am criticat moravurile societ\u0103\u021Bii cu o peni\u021B\u0103
@@ -30,3 +30,4 @@ MonoBehaviour:
   - {fileID: 8300000, guid: d2771715d4d8a004ea4c0bead931c34f, type: 3}
   - {fileID: 8300000, guid: 782e7f51f2432f64395a0f4c4e6ed458, type: 3}
   - {fileID: 8300000, guid: ad5edba1bc7b0494d9f24b9a9f925986, type: 3}
+  activeBadge: 0

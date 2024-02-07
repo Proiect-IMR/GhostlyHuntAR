@@ -21,7 +21,6 @@ public class TouchManager : MonoBehaviour
                     NPCModel npcModel = hit.transform.GetComponent<NPCModel>();
                     if (npcModel != null)
                     {
-                        //NPC npcData = npcModel.npcData;
                         dialogueManager.AdvanceDialogue();
                     }
                 }

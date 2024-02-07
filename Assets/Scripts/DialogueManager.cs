@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using System.IO;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class DialogueManager : MonoBehaviour
     public GameObject ghostName;
     public GameObject guessButton;
     public GameObject inputFieldObject;
+    public TextMeshProUGUI activeGhost;
 
 
     public AudioClip[] dialogueAudioClips;
@@ -58,8 +60,8 @@ public class DialogueManager : MonoBehaviour
 
             if (audioSource != null && dialogueAudioClips != null && currentDialogueIndex < dialogueAudioClips.Length)
             {
-                audioSource.Stop(); // Stop any currently playing clips
-                audioSource.PlayOneShot(dialogueAudioClips[currentDialogueIndex]); // Then play the new clip
+                audioSource.Stop(); 
+                audioSource.PlayOneShot(dialogueAudioClips[currentDialogueIndex]); 
             }
 
             HandleInputVisibility();
@@ -84,6 +86,8 @@ public class DialogueManager : MonoBehaviour
             dialogueText.text = "Corect!";
             audioSource.PlayOneShot(correct_answer);
             npc.guessed = true;
+            npc.activeBadge = true;
+            SaveBadgeState(npc); 
         }
         else
         {
@@ -93,6 +97,16 @@ public class DialogueManager : MonoBehaviour
 
         inputFieldObject.SetActive(false);
         guessButton.SetActive(false);
+    }
+    public void SaveBadgeState(NPC npc)
+    {
+        NPCBadgeState state = new NPCBadgeState { activeBadge = npc.activeBadge };
+
+        string stateJson = JsonUtility.ToJson(state);
+        activeGhost.text = "Active badge" + npc.activeBadge + " " + npc.ghostName + ".json";
+
+        string filePath = Path.Combine(Application.persistentDataPath, npc.ghostName + ".json");
+        File.WriteAllText(filePath, stateJson);
     }
     private void EndDialogue()
     {
@@ -127,4 +141,9 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
+}
+[System.Serializable]
+public class NPCBadgeState
+{
+    public bool activeBadge;
 }
