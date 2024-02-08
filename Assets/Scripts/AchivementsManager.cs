@@ -9,7 +9,6 @@ public class AchivementsManager : MonoBehaviour
     public NPC[] npcs;
     public GameObject[] unlockBadges;
     public GameObject[] activeBadges;
-    public TextMeshProUGUI debugText;
 
 
     void Start()
@@ -40,7 +39,6 @@ public class AchivementsManager : MonoBehaviour
         string filePath = Path.Combine(Application.persistentDataPath, npc.ghostName + ".json");
         if (File.Exists(filePath))
         {
-            debugText.text = "File exists" + " " + filePath;
             string stateJson = File.ReadAllText(filePath);
 
             NPCBadgeState state = JsonUtility.FromJson<NPCBadgeState>(stateJson);

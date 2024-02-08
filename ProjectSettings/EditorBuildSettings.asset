@@ -47,6 +47,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/IonLucaCaragialeBadge.unity
     guid: 99687c683487d524ba9ff1e9183c4498
+  - enabled: 1
+    path: Assets/Scenes/MihaiEminescuBadge.unity
+    guid: a4a4abcd2efcf1c41b786ee1460dd9c1
+  - enabled: 1
+    path: Assets/Scenes/VeronicaMicleBadge.unity
+    guid: 364ef718558a44646a97e6e001d0c48e
+  - enabled: 1
+    path: Assets/Scenes/IonCreangaBadge.unity
+    guid: 6a021458e2bc0644dbd3bb1cdf713783
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: a45cfaafd0ce35949aa2f26c91128f7e, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 13dbecff010ceb145ab2e51e92f5bb54, type: 2}

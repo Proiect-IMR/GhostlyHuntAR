@@ -2650,7 +2650,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &794287168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3143,8 +3143,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 311.11115}
-  m_SizeDelta: {x: 700, y: 100}
+  m_AnchoredPosition: {x: 0, y: 366.96774}
+  m_SizeDelta: {x: 700, y: 89.0548}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &899508071
 MonoBehaviour:
@@ -3221,7 +3221,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 173.99994}
+  m_AnchoredPosition: {x: 0, y: 203}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &950706699
@@ -3629,7 +3629,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 251}
+  m_AnchoredPosition: {x: 0, y: 286}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1080664288
@@ -4038,7 +4038,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1148580394
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4600,7 +4600,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1228150075
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5422,7 +5422,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 15.999978, y: -4.1000366}
+  m_AnchoredPosition: {x: 15.999978, y: -2.4}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1453197878
@@ -6282,7 +6282,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 394, y: 10.6}
+  m_AnchoredPosition: {x: 394, y: 7.2}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1656189967
@@ -6368,7 +6368,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -166.56578, y: -9.076193, z: -177.55952, w: -41.860733}
+  m_margin: {x: -166.56578, y: -9.076193, z: -199.10939, w: -41.860733}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -7627,7 +7627,6 @@ MonoBehaviour:
   inputFieldObject: {fileID: 1005351113}
   rightAnswer: {fileID: 1439996306}
   wrongAnswer: {fileID: 1453197876}
-  activeGhost: {fileID: 1148580395}
   dialogueAudioClips: []
   audioSource: {fileID: 1456446298}
   wrong_answer: {fileID: 8300000, guid: 6b99a9b0551a5a6469e7e6e697a5a14c, type: 3}
@@ -8218,8 +8217,6 @@ MonoBehaviour:
   - {fileID: 1154270188}
   - {fileID: 2106482958}
   textMeshPro: {fileID: 1696769764}
-  distanceText: {fileID: 1228150076}
-  activeGhost: {fileID: 794287168}
 --- !u!4 &2029410594
 Transform:
   m_ObjectHideFlags: 0

@@ -123,7 +123,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &1052415306
+--- !u!1 &1057929194
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -131,12 +131,12 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1052415307}
-  - component: {fileID: 1052415312}
-  - component: {fileID: 1052415311}
-  - component: {fileID: 1052415310}
-  - component: {fileID: 1052415309}
-  - component: {fileID: 1052415308}
+  - component: {fileID: 1057929195}
+  - component: {fileID: 1057929200}
+  - component: {fileID: 1057929199}
+  - component: {fileID: 1057929198}
+  - component: {fileID: 1057929197}
+  - component: {fileID: 1057929196}
   m_Layer: 5
   m_Name: Titlu
   m_TagString: Untagged
@@ -144,14 +144,14 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &1052415307
+--- !u!224 &1057929195
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1052415306}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_GameObject: {fileID: 1057929194}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -161,16 +161,16 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 5, y: -392.00708}
-  m_SizeDelta: {x: 932.3407, y: 246.1928}
+  m_AnchoredPosition: {x: 5, y: -424.22534}
+  m_SizeDelta: {x: 932.3407, y: 181.7563}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1052415308
+--- !u!114 &1057929196
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1052415306}
+  m_GameObject: {fileID: 1057929194}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -184,7 +184,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: dc47b73c0a8ad184f98bc81651364e6e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 01700a60b8e5b6c40bfc7e2a090e963b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -194,34 +194,34 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!222 &1052415309
+--- !u!222 &1057929197
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1052415306}
+  m_GameObject: {fileID: 1057929194}
   m_CullTransparentMesh: 1
---- !u!65 &1052415310
+--- !u!65 &1057929198
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1052415306}
+  m_GameObject: {fileID: 1057929194}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1052415311
+--- !u!23 &1057929199
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1052415306}
+  m_GameObject: {fileID: 1057929194}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -257,13 +257,13 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1052415312
+--- !u!33 &1057929200
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1052415306}
+  m_GameObject: {fileID: 1057929194}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1084228460
 GameObject:
@@ -586,7 +586,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 66, y: -284}
+  m_AnchoredPosition: {x: 66, y: -288}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1944511768
@@ -609,19 +609,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\t\u0218tefan cel Mare a fost domnitor al Moldovei \xEEntre anii 1457
-    \u0219i 1504, fiind una dintre cele mai marcante \u0219i respectate figuri istorice
-    din istoria Rom\xE2niei. Este cunoscut pentru abilit\u0103\u021Bile sale de lider
-    militar \u0219i diplomat, reu\u0219ind s\u0103 apere Moldova de invaziile repetate
-    ale puterilor vecine, precum Imperiul Otoman, Regatul Poloniei \u0219i Regatul
-    Ungariei. \u0218tefan cel Mare a fost un conduc\u0103tor apreciat pentru dreptatea
-    \u0219i \xEEn\u021Belepciunea sa, fiind celebrat pentru construirea \u0219i restaurarea
-    a numeroase m\u0103n\u0103stiri \u0219i biserici, dintre care unele sunt recunoscute
-    ast\u0103zi ca Patrimoniu Mondial UNESCO. Domnia sa este adesea considerat\u0103
-    o perioad\u0103 de aur pentru Moldova, marc\xE2nd apogeul puterii \u0219i influen\u021Bei
-    regiunii \xEEn Europa medieval\u0103. \u0218tefan cel Mare este venerat ca sf\xE2nt
-    de c\u0103tre Biserica Ortodox\u0103 Rom\xE2n\u0103, sub numele de Sf\xE2ntul
-    Voievod \u0218tefan cel Mare."
+  m_text: "Ion Creang\u0103 (1837-1889)\r\n\tIon Creang\u0103 este unul dintre cei
+    mai \xEEndr\u0103gi\u021Bi scriitori rom\xE2ni, cunoscut pentru operele sale
+    narative care combin\u0103 elemente de realism, umor \u0219i elemente fantastice.
+    \"Amintiri din copil\u0103rie\" este o lucrare autobiografic\u0103 remarcabil\u0103
+    care portretizeaz\u0103 cu nostalgie \u0219i umor via\u021Ba rural\u0103 tradi\u021Bional\u0103
+    rom\xE2neasc\u0103. Creang\u0103 a contribuit semnificativ la literatura pentru
+    copii prin basmele sale, cum ar fi \"Povestea lui Harap Alb\" \u0219i \"Capra
+    cu trei iezi\", care au fost \u0219i r\u0103m\xE2n pove\u0219ti \xEEndr\u0103gite
+    de genera\u021Bii de cititori."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -684,7 +680,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -382.68835, y: -601.93677, z: -263.9096, w: -474.25262}
+  m_margin: {x: -382.68835, y: -601.93677, z: -263.9096, w: -416.53156}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1005,7 +1001,7 @@ RectTransform:
   - {fileID: 1637943052}
   - {fileID: 2044778242}
   - {fileID: 1944511767}
-  - {fileID: 1052415307}
+  - {fileID: 1057929195}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

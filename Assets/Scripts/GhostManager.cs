@@ -22,8 +22,8 @@ public class GhostManager : MonoBehaviour
     public GameObject[] ghosts;
 
     public TextMeshProUGUI textMeshPro;
-    public TextMeshProUGUI distanceText;
-    public TextMeshProUGUI activeGhost;
+    //public TextMeshProUGUI distanceText;
+    //public TextMeshProUGUI activeGhost;
 
     private GameObject currentActiveGhost;
     private GameObject nearestGhost = null;
@@ -77,7 +77,7 @@ public class GhostManager : MonoBehaviour
     void UpdateNearestGhost(LocationInfo playerLocation)
     {
         double maximumDistanceToActivateInKilometers = maximumDistanceToActivateInMeters / 1000.0; 
-        distanceText.text = "Distance to activate: " + maximumDistanceToActivateInKilometers;
+        //distanceText.text = "Distance to activate: " + maximumDistanceToActivateInKilometers;
         double nearestDistance = double.MaxValue;
         int nearestGhostIndex = -1;
 
@@ -94,20 +94,20 @@ public class GhostManager : MonoBehaviour
                 nearestGhost = ghosts[i];
                 nearestGhostIndex = i;
             }
-            activeGhost.text = "Active Ghost: " + nearestGhost.name + " " + nearestGhostIndex + " " + nearestDistance;
+            //activeGhost.text = "Active Ghost: " + nearestGhost.name + " " + nearestGhostIndex + " " + nearestDistance;
         }
 
         if (nearestGhostIndex != -1 && nearestDistance <= maximumDistanceToActivateInKilometers)
         {
             //distanceText.text = "Distance to ghost : " + nearestDistance;
-            distanceText.text = "Active badge" + npcs[nearestGhostIndex].activeBadge;
+            //distanceText.text = "Active badge" + npcs[nearestGhostIndex].activeBadge;
             if (currentActiveGhost != nearestGhost)
             {
                 if (currentActiveGhost != null)
                 {
                     currentActiveGhost.SetActive(false);
                 }
-                activeGhost.text = "Active Ghost: " + nearestGhost.name;
+                //activeGhost.text = "Active Ghost: " + nearestGhost.name;
 
                 nearestGhost.SetActive(true);
                 currentActiveGhost = nearestGhost;

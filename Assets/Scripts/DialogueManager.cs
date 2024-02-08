@@ -20,7 +20,6 @@ public class DialogueManager : MonoBehaviour
     public GameObject rightAnswer;
     public GameObject wrongAnswer;
 
-    public TextMeshProUGUI activeGhost;
 
 
     public AudioClip[] dialogueAudioClips;
@@ -91,6 +90,7 @@ public class DialogueManager : MonoBehaviour
             audioSource.PlayOneShot(correct_answer);
             npc.guessed = true;
             npc.activeBadge = true;
+            //activeGhost.text = "Active badge1" + npc.activeBadge + " " + npc.ghostName;
             SaveBadgeState(npc); 
         }
         else
@@ -108,7 +108,7 @@ public class DialogueManager : MonoBehaviour
         NPCBadgeState state = new NPCBadgeState { activeBadge = npc.activeBadge };
 
         string stateJson = JsonUtility.ToJson(state);
-        activeGhost.text = "Active badge" + npc.activeBadge + " " + npc.ghostName + ".json";
+        //activeGhost.text = "Active badge" + npc.activeBadge + " " + npc.ghostName + ".json";
 
         string filePath = Path.Combine(Application.persistentDataPath, npc.ghostName + ".json");
         File.WriteAllText(filePath, stateJson);
