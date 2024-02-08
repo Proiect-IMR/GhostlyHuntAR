@@ -68,7 +68,8 @@ public class GhostManager : MonoBehaviour
             // Get the player's current location
             LocationInfo playerLocation = Input.location.lastData;
             UpdateNearestGhost(playerLocation);
-
+            PlayerLocationData.Latitude = playerLocation.latitude;
+            PlayerLocationData.Longitude = playerLocation.longitude;
             Debug.Log("Update");
         }
     }
