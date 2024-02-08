@@ -20,20 +20,20 @@ public static class PlayerLocationData
 
     static PlayerLocationData()
     {
-        StefanLat = 47.1490096043921;
-        StefanLong = 27.5939775719424;
+        StefanLat = 47.1737226938934;
+        StefanLong = 27.5749481339473;
 
-        MihaiLat = 47.1492788195143;
-        MihaiLong = 27.5941104750433;
+        MihaiLat = 47.173067878793;
+        MihaiLong = 27.5730231189486;
 
-        IonLat = 47.1488000244202;
-        IonLong = 27.5936504592582;
+        IonLat = 47.1736856568739;
+        IonLong = 27.5733225091837;
 
-        VeroLat = 47.1495065669653;
-        VeroLong = 27.594558234129;
+        VeroLat = 47.174563642928;
+        VeroLong = 27.5773782228661;
 
-        CreangaLat = 47.148412794584;
-        CreangaLong = 27.5931382394774;
+        CreangaLat = 47.1729311618524;
+        CreangaLong = 27.5739723843849;
 
     }
 

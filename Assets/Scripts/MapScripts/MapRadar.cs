@@ -37,7 +37,8 @@ public class MapRadar : MonoBehaviour
         float longitude = PlayerLocationData.Longitude;
         lat = latitude;
         lon = longitude;
-
+        //lat = 47.17330569028472f;
+        //lon = 27.573524429283097f;
         StartCoroutine(GetGoogleMap());
         rect = gameObject.GetComponent<RawImage>().rectTransform.rect;
         mapWidth = (int)Math.Round(rect.width);
@@ -81,11 +82,11 @@ public class MapRadar : MonoBehaviour
     {
 
 
-        string stefansCircle = GenerateCirclePath(PlayerLocationData.StefanLat, PlayerLocationData.StefanLong, 50); // Radius of 50 meters
-        string mihaisCircle = GenerateCirclePath(PlayerLocationData.MihaiLat, PlayerLocationData.MihaiLong, 50); // Radius of 50 meters
-        string ionsCircle = GenerateCirclePath(PlayerLocationData.IonLat, PlayerLocationData.IonLong, 50); // Radius of 50 meters
-        string verosCircle = GenerateCirclePath(PlayerLocationData.VeroLat, PlayerLocationData.VeroLong, 50); // Radius of 50 meters
-        string creangasCircle = GenerateCirclePath(PlayerLocationData.CreangaLat, PlayerLocationData.CreangaLong, 50); // Radius of 50 meters
+        string stefansCircle = GenerateCirclePath(PlayerLocationData.StefanLat, PlayerLocationData.StefanLong, 30); // Radius of 50 meters
+        string mihaisCircle = GenerateCirclePath(PlayerLocationData.MihaiLat, PlayerLocationData.MihaiLong, 30); // Radius of 50 meters
+        string ionsCircle = GenerateCirclePath(PlayerLocationData.IonLat, PlayerLocationData.IonLong, 30); // Radius of 50 meters
+        string verosCircle = GenerateCirclePath(PlayerLocationData.VeroLat, PlayerLocationData.VeroLong, 30); // Radius of 50 meters
+        string creangasCircle = GenerateCirclePath(PlayerLocationData.CreangaLat, PlayerLocationData.CreangaLong, 30); // Radius of 50 meters
 
 
 

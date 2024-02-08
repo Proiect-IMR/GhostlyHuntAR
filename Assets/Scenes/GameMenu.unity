@@ -2340,22 +2340,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ECEF:
-    x: 3851303.496613057
-    y: 2012897.3860395937
-    z: 4653099.357368072
+    x: 3850221.9350505634
+    y: 2010704.3117076084
+    z: 4655011.18361311
   EUN:
-    x: 0.6600000262260437
-    y: 60.150001525878906
-    z: -6.650000095367432
+    x: -1441.9749755859375
+    y: 119
+    z: 2741.03466796875
   EUS:
-    x: 0.6600000262260437
-    y: 60.150001525878906
-    z: 6.650000095367432
+    x: -1441.9749755859375
+    y: 119
+    z: -2741.03466796875
   shouldPosition: 1
   AltType: 1
-  _latitude: 47.14900960439209
-  _longitude: 27.593977571942368
-  _altitude: 71.65000503139576
+  _latitude: 47.17372269389341
+  _longitude: 27.574948133947252
+  _altitude: 131.25244991942145
   _altitudeOffset: 0
   _geoRefLatitude: 47.14906942
   _geoRefLongitude: 27.59396887
@@ -2368,7 +2368,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705714175}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.66, y: 60.15, z: -6.65}
+  m_LocalPosition: {x: -1441.975, y: 119, z: 2741.0347}
   m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4186,22 +4186,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ECEF:
-    x: 3851248.3445385774
-    y: 2012918.2530177617
-    z: 4653138.32545631
+    x: 3850080.626707497
+    y: 2010838.3486817526
+    z: 4655080.526307882
   EUN:
-    x: 44.70000076293945
-    y: 62.04999923706055
-    z: 48.599998474121094
+    x: -1257.72998046875
+    y: 126.88999938964844
+    z: 2834.489990234375
   EUS:
-    x: 44.70000076293945
-    y: 62.04999923706055
-    z: -48.599998474121094
+    x: -1257.72998046875
+    y: 126.88999938964844
+    z: -2834.489990234375
   shouldPosition: 1
   AltType: 1
-  _latitude: 47.14950656696535
-  _longitude: 27.59455823412896
-  _altitude: 73.55034099060722
+  _latitude: 47.17456364292799
+  _longitude: 27.577378222866123
+  _altitude: 139.14442646075514
   _altitudeOffset: 0
   _geoRefLatitude: 47.14906942
   _geoRefLongitude: 27.59396887
@@ -4213,15 +4213,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1154270188}
-  m_LocalRotation: {x: -0, y: -0.62047476, z: -0, w: 0.7842264}
-  m_LocalPosition: {x: 44.7, y: 62.05, z: 48.6}
+  m_LocalRotation: {x: -0, y: -0.9833457, z: -0, w: -0.18174504}
+  m_LocalPosition: {x: -1257.73, y: 126.89, z: 2834.49}
   m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1108307606}
   m_Father: {fileID: 0}
   m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: -76.702, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -200.943, z: 0}
 --- !u!1 &1154590966
 GameObject:
   m_ObjectHideFlags: 0
@@ -6705,22 +6705,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ECEF:
-    x: 3851329.777895582
-    y: 2012883.1277558587
-    z: 4653083.085980628
+    x: 3850280.5548031344
+    y: 2010595.89165456
+    z: 4655007.040350302
   EUN:
-    x: -24.149999618530273
-    y: 59.56999969482422
-    z: -29.950000762939453
+    x: -1565.21533203125
+    y: 117.13999938964844
+    z: 2736.947509765625
   EUS:
-    x: -24.149999618530273
-    y: 59.56999969482422
-    z: 29.950000762939453
+    x: -1565.21533203125
+    y: 117.13999938964844
+    z: -2736.947509765625
   shouldPosition: 1
   AltType: 1
-  _latitude: 47.14880002442024
-  _longitude: 27.59365045925822
-  _altitude: 71.0701157429369
+  _latitude: 47.17368565687385
+  _longitude: 27.573322509183694
+  _altitude: 129.41969209379712
   _altitudeOffset: 0
   _geoRefLatitude: 47.14906942
   _geoRefLongitude: 27.59396887
@@ -6732,15 +6732,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1691051269}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -24.15, y: 59.57, z: -29.95}
+  m_LocalRotation: {x: -0, y: 0.65193605, z: -0, w: 0.7582739}
+  m_LocalPosition: {x: -1565.2153, y: 117.14, z: 2736.9475}
   m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1110200682}
   m_Father: {fileID: 0}
   m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 81.375, z: 0}
 --- !u!1 &1696769762
 GameObject:
   m_ObjectHideFlags: 0
@@ -8120,22 +8120,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ECEF:
-    x: 3851279.326735388
-    y: 2012896.1273077882
-    z: 4653119.646578244
+    x: 3850334.0650360016
+    y: 2010598.228872905
+    z: 4654958.346482825
   EUN:
-    x: 10.739999771118164
-    y: 60.060001373291016
-    z: 23.280000686645508
+    x: -1587.9300537109375
+    y: 114.43000030517578
+    z: 2668.27001953125
   EUS:
-    x: 10.739999771118164
-    y: 60.060001373291016
-    z: -23.280000686645508
+    x: -1587.9300537109375
+    y: 114.43000030517578
+    z: -2668.27001953125
   shouldPosition: 1
   AltType: 1
-  _latitude: 47.149278819514315
-  _longitude: 27.594110475043287
-  _altitude: 71.56005294016033
+  _latitude: 47.17306787879301
+  _longitude: 27.573023118948583
+  _altitude: 126.68615960210988
   _altitudeOffset: 0
   _geoRefLatitude: 47.14906942
   _geoRefLongitude: 27.59396887
@@ -8147,15 +8147,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1996407008}
-  m_LocalRotation: {x: -0, y: -0.96650827, z: -0, w: 0.25663555}
-  m_LocalPosition: {x: 10.74, y: 60.06, z: 23.28}
+  m_LocalRotation: {x: -0, y: 0.579271, z: -0, w: 0.81513506}
+  m_LocalPosition: {x: -1587.93, y: 114.43, z: 2668.27}
   m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 315629299}
   m_Father: {fileID: 0}
   m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: -150.259, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 70.799, z: 0}
 --- !u!1 &2029410592
 GameObject:
   m_ObjectHideFlags: 0
@@ -8187,20 +8187,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ghostLocations:
   - name: StefanCelMare
-    latitude: 47.1490096043921
-    longitude: 27.5939775719424
+    latitude: 47.1737226938934
+    longitude: 27.5749481339473
   - name: MihaiEminescu
-    latitude: 47.1492788195143
-    longitude: 27.5941104750433
+    latitude: 47.173067878793
+    longitude: 27.5730231189486
   - name: IonLucaCaragiale
-    latitude: 47.1488000244202
-    longitude: 27.5936504592582
+    latitude: 47.1736856568739
+    longitude: 27.5733225091837
   - name: VeronicaMicle
-    latitude: 47.1495065669653
-    longitude: 27.594558234129
+    latitude: 47.174563642928
+    longitude: 27.5773782228661
   - name: Ion Creanga
-    latitude: 47.148412794584
-    longitude: 27.5931382394774
+    latitude: 47.1729311618524
+    longitude: 27.5739723843849
   dialogueManager: {fileID: 1831805737}
   npcs:
   - {fileID: 11400000, guid: b05f10fe94b575c489b1ecef42552404, type: 2}
@@ -8280,22 +8280,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ECEF:
-    x: 3851376.558073662
-    y: 2012863.7412983894
-    z: 4653054.797685073
+    x: 3850309.638142077
+    y: 2010666.659933345
+    z: 4654946.800988818
   EUN:
-    x: -63
-    y: 60.91999816894531
-    z: -73
+    x: -1515.96826171875
+    y: 112.80000305175781
+    z: 2653.05078125
   EUS:
-    x: -63
-    y: 60.91999816894531
-    z: 73
+    x: -1515.96826171875
+    y: 112.80000305175781
+    z: -2653.05078125
   shouldPosition: 1
   AltType: 1
-  _latitude: 47.14841279458402
-  _longitude: 27.593138239477376
-  _altitude: 72.42072704467354
+  _latitude: 47.17293116185241
+  _longitude: 27.57397238438488
+  _altitude: 125.03232752158945
   _altitudeOffset: 0
   _geoRefLatitude: 47.14906942
   _geoRefLongitude: 27.59396887
@@ -8308,7 +8308,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2106482958}
   m_LocalRotation: {x: -0, y: -0.31829017, z: -0, w: 0.9479934}
-  m_LocalPosition: {x: -63, y: 60.92, z: -73}
+  m_LocalPosition: {x: -1515.9683, y: 112.8, z: 2653.0508}
   m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_ConstrainProportionsScale: 0
   m_Children:
