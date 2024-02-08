@@ -41,6 +41,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Map.unity
     guid: 7a0abb8d25750d849afe8b5f703ccae1
+  - enabled: 1
+    path: Assets/Scenes/StefanCelMareBadge.unity
+    guid: 7919b5c7f6783d042950e686f0ac2604
+  - enabled: 1
+    path: Assets/Scenes/IonLucaCaragialeBadge.unity
+    guid: 99687c683487d524ba9ff1e9183c4498
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: a45cfaafd0ce35949aa2f26c91128f7e, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 13dbecff010ceb145ab2e51e92f5bb54, type: 2}

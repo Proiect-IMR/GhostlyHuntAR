@@ -42,7 +42,6 @@ public class GhostManager : MonoBehaviour
             maxWait--;
         }
 
-        // Service didn't initialize in 20 seconds
         if (maxWait < 1)
         {
             print("Timed out");
@@ -70,7 +69,7 @@ public class GhostManager : MonoBehaviour
             UpdateNearestGhost(playerLocation);
             PlayerLocationData.Latitude = playerLocation.latitude;
             PlayerLocationData.Longitude = playerLocation.longitude;
-            Debug.Log("Update");
+
         }
     }
     private float maximumDistanceToActivateInMeters = 20f;

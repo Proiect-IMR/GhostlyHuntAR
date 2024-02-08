@@ -7,7 +7,6 @@ public class DialogueManager : MonoBehaviour
 {
     public NPC npc;
     public TextMeshProUGUI dialogueText;
-    public TextMeshProUGUI ghostNameText;
     public TMP_InputField inputField;
 
     public Button nextButton;
@@ -15,9 +14,12 @@ public class DialogueManager : MonoBehaviour
 
 
     public GameObject dialoguePanel;
-    public GameObject ghostName;
     public GameObject guessButton;
     public GameObject inputFieldObject;
+
+    public GameObject rightAnswer;
+    public GameObject wrongAnswer;
+
     public TextMeshProUGUI activeGhost;
 
 
@@ -33,13 +35,14 @@ public class DialogueManager : MonoBehaviour
     private void Start()
     {
         dialoguePanel.SetActive(false);
-        ghostName.SetActive(false);
         inputFieldObject.SetActive(false);
         guessButton.SetActive(false);
         if (audioSource == null)
         {
             audioSource = GetComponent<AudioSource>();
         }
+        rightAnswer.SetActive(false);
+        wrongAnswer.SetActive(false);
     }
 
     public void AdvanceDialogue()
@@ -83,7 +86,8 @@ public class DialogueManager : MonoBehaviour
 
         if (userInput.Equals(correctAnswer, System.StringComparison.OrdinalIgnoreCase))
         {
-            dialogueText.text = "Corect!";
+            dialogueText.text = "";
+            rightAnswer.SetActive(true);
             audioSource.PlayOneShot(correct_answer);
             npc.guessed = true;
             npc.activeBadge = true;
@@ -91,7 +95,8 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
-            dialogueText.text = "Greșit!";
+           dialogueText.text = "";
+            wrongAnswer.SetActive(true);
             audioSource.PlayOneShot(wrong_answer);
         }
 
@@ -117,13 +122,11 @@ public class DialogueManager : MonoBehaviour
         currentDialogueIndex = 0;
         dialoguePanel.SetActive(false);
         guessButton.SetActive(false);
-        ghostName.SetActive(true);
-        if(npc.guessed)
-        {
-            ghostNameText.text = npc.ghostName;
-        }
+
         inputFieldObject.SetActive(false);
         nextButton.gameObject.SetActive(false);
+        rightAnswer.SetActive(false);
+        wrongAnswer.SetActive(false);
         interactButton.gameObject.SetActive(true);
     }
     private void HandleInputVisibility()
