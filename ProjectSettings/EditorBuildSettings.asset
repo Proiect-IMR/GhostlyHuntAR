@@ -35,6 +35,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Achivements.unity
     guid: 33d391c4da802fa48a28500e33dc9594
+  - enabled: 1
+    path: Assets/Scenes/HelpScene.unity
+    guid: af4439c44120464498bf032f025a16da
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: a45cfaafd0ce35949aa2f26c91128f7e, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 13dbecff010ceb145ab2e51e92f5bb54, type: 2}

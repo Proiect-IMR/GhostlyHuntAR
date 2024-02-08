@@ -30,4 +30,4 @@ MonoBehaviour:
   - {fileID: 8300000, guid: b2786c6eee5b15843918fb33d349493b, type: 3}
   - {fileID: 8300000, guid: c91595441059f1142b82dcf934d2fc93, type: 3}
   - {fileID: 8300000, guid: 712a0bb8a927c704abe15eb1c050a21d, type: 3}
-  activeBadge: 1
+  activeBadge: 0
